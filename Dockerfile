@@ -1,6 +1,5 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bullseye 
 
-# Install system packages including Tesseract OCR and OpenCV dependencies
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     libglib2.0-0 \
