@@ -7,8 +7,6 @@ import re
 from tempfile import NamedTemporaryFile
 
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-
 app = FastAPI(title="Ingredient Extractor API")
 
 def process_image(image_bytes: bytes):
