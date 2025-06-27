@@ -7,7 +7,7 @@ import re
 from tempfile import NamedTemporaryFile
 
 
-app = FastAPI(title="Ingredient Extractor API")
+app = FastAPI()
 
 def process_image(image_bytes: bytes):
     # Convert image bytes to OpenCV format
